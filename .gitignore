@@ -39,3 +39,6 @@ bin/
 .DS_Store
 /.idea/
 /.idea/
+
+# local run logs
+*-run.log

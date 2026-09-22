@@ -1,9 +1,13 @@
 [versions]
-keycloak = "25.0.0"
-google-apiClient = "2.6.0"
+keycloak = "26.2.5"
+google-apiClient = "2.9.1"
 spotless = "6.25.0"
 shadow = "8.1.1"
-junit = "5.10.1"
+junit = "5.11.4"
+junit-platform = "1.11.4"
+mockito = "5.14.2"
+# JAX-RS runtime for tests only — Keycloak's own version, resolves jakarta.ws.rs RuntimeDelegate.
+resteasy = "6.2.12.Final"
 
 [plugins]
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
@@ -15,3 +19,7 @@ keycloak-services = { module = "org.keycloak:keycloak-services", version.ref = "
 keycloak-serverSpi = { module = "org.keycloak:keycloak-server-spi", version.ref = "keycloak" }
 keycloak-serverSpi-private = { module = "org.keycloak:keycloak-server-spi-private", version.ref = "keycloak" }
 google-apiClient = { module = "com.google.api-client:google-api-client", version.ref = "google-apiClient" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-platform" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+resteasy-core = { module = "org.jboss.resteasy:resteasy-core", version.ref = "resteasy" }
